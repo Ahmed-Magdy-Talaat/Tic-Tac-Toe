@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+body {
+  background-color: hsl(218, 23%, 16%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+  margin: auto;
+  align-self: center;
+  background-color: #313a49;
+  padding: 20px;
+}
+.square {
+  background-color: #52ffa5;
+  width: 150px;
+  height: 150px;
+  font-size: 5em;
+  align-self: center;
+  text-align: center;
+  color: #1f2632;
+}
+
+@media (max-width: 750px) {
+  .square {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.status {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+.status span {
+  color: #52ffa5;
+}
+.reset {
+  margin: auto;
+  width: 50px;
+  background-color: #52ffa5;
+
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 5px;
+}
+.reset img {
+  width: 100%;
+}
